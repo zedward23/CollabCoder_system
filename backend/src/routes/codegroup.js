@@ -38,7 +38,8 @@ const generateCodeGroups = async (codes) => {
             }).filter(Boolean);
             return { groupName, groupMembers: groupMembers.map(e => e.trim()) };
         });
-
+        
+        console.log('generating some code groups bazinga')
         console.log('groupData', groupData)
         return groupData;
     }

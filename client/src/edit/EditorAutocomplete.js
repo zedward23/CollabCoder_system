@@ -71,8 +71,11 @@ export default function EditorAutocomplete(props) {
           currentCodesList: currentCodesList
         }
       })
-      let index = data.index
+      let index = data.index - 1
       let generatedCodes = data.response
+      console.log("generatedCodes", generatedCodes)
+      console.log("index", index)
+      console.log("LMFAO")
 
       let newOptions = []
       newOptions.push(generatedCodes.gptsummary.map(code => (
@@ -182,6 +185,8 @@ export default function EditorAutocomplete(props) {
       onOpen={() => {
 
         if (!hasAiSum) {
+          console.log("let's see what Value is")
+          console.log(value)
           summarizeSentence(value)
         }
         setOpen(true);

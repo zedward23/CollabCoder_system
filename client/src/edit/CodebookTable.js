@@ -28,6 +28,7 @@ CodebookTable.propTypes = {
 export default function CodebookTable(props) {
 
     const { owner, project, userName } = useParams()
+    console.log("I'M RUNNING RIGHT NOW")
 
     const codebookUpdateCode = (newValue, oldcode) => {
 

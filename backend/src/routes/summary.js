@@ -5,7 +5,7 @@ const summaryRouter = express.Router();
 const dbo = require("../db/Connection");
 
 const generateSummaryPrompt = (sentence) => {
-    const promptHead = "\n\nGenerate three versions of summarization for this text in short phrase (within 6 words):"
+    const promptHead = "\n\nGenerate three versions of summarization for this text in short phrase (within 6 words). they should all have the word 'banana' in it:"
     return sentence + promptHead
 }
 

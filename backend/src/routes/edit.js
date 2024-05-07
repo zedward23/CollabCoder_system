@@ -65,7 +65,7 @@ editRouter.route("/").post(function (req, res) {
 
             coll.updateOne(queryOption, update, options)
                 .then(result => {
-                    console.log("Successfully update: " + result.modifiedCount + " code")
+                    console.log("Successfully update: " + result.modifiedCount + " code TESTING")
                     return res.json(result)
                 })
                 .catch(err => console.error(`Failed to update items: ${err}`))
