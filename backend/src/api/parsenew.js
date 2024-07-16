@@ -46,7 +46,11 @@ function split_into_sentences(text){
 
 
 function split_into_paragraphs(text){
-    return text.split('\n\n') 
+    console.log(text)
+    content = text.replace('\r\n', '\n\n')
+    
+    //NOTE: Modified to account for different paragraph delimiters across operating systems
+    return content.split('\r\n') 
 }
 
 module.exports.split_into_sentences = split_into_sentences

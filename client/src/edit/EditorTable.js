@@ -55,7 +55,7 @@ export default function EditorTable(props) {
         owner: owner,
         userName: userName,
         project: project,
-        row_id: id+1,
+        row_id: id,
         code: code,
         selectedFromAuthor: selectedFromAuthor,
         uncertainty: uncertainty,

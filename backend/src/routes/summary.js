@@ -5,8 +5,10 @@ const summaryRouter = express.Router();
 const dbo = require("../db/Connection");
 
 const generateSummaryPrompt = (sentence) => {
-    const promptHead = "\n\nGenerate three versions of summarization for this text in short phrase (within 6 words). they should all have the word 'banana' in it:"
-    return sentence + promptHead
+    //const promptHead = "\n\nGenerate three versions of summarization for this text in short phrase (within 6 words). they should all have the word 'banana' in it:"
+    
+    const promptHead = "Gauge if the provided sentence denotes an event of corporate leadership of some kind, like an acquisition, a product launch, or a partnership. If so, summarize the event in a short phrase (6 words or less). If not, write 'N/A'."
+    return sentence + promptHead    
 }
 
 const generateOneSentenceSummary = async (sentence) => {

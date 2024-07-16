@@ -71,7 +71,7 @@ export default function EditorAutocomplete(props) {
           currentCodesList: currentCodesList
         }
       })
-      let index = data.index - 1
+      let index = data.index
       let generatedCodes = data.response
       console.log("generatedCodes", generatedCodes)
       console.log("index", index)
